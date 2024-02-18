@@ -9,7 +9,11 @@
         android:id="@+id/navigation_home"
         android:name="com.jorge.app_google_certification_codelabs.codelabs.mainfragment.MainFragment"
         android:label="@string/title_Codelabs"
-        tools:layout="@layout/fragment_main" />
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_dashboard"
+            app:destination="@id/navigation_dashboard" />
+    </fragment>
 
     <fragment
         android:id="@+id/navigation_dashboard"

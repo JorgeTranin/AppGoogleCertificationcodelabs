@@ -3,4 +3,6 @@
     <string name="title_Codelabs">CodeLabs</string>
     <string name="title_sobre">Sobre</string>
     <string name="title_notifications">Notifications</string>
+    <string name="google_developers_certification">Google Developers Certification</string>
+    <string name="nucleo_do_android">Núcleo do Android</string>
 </resources>

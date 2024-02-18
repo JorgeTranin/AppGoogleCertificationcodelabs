@@ -5,6 +5,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import com.jorge.app_google_certification_codelabs.R
+import com.jorge.app_google_certification_codelabs.codelabs.util.navTo
 import com.jorge.app_google_certification_codelabs.databinding.FragmentMainBinding
 
 class MainFragment : Fragment() {
@@ -22,6 +24,11 @@ class MainFragment : Fragment() {
         _binding = FragmentMainBinding.inflate(inflater, container, false)
         val root: View = binding.root
         return root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        binding.button.setOnClickListener { navTo(R.id.action_navigation_home_to_navigation_dashboard) }
     }
 
     override fun onDestroyView() {
