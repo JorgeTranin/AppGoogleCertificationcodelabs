@@ -6,7 +6,7 @@
     <string name="google_developers_certification">Google Developers Certification</string>
     <string name="nucleo_do_android">Núcleo do Android</string>
     <string name="toast_Snack">Toast SnackBar</string>
-    <string name="apresentaco_de_snackbar">Apresentação de SnackBar</string>
+    <string name="notification">Apresentação de Notificações</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="apresentacao_de_toast_e_snack">Apresentação de Toast e Snack</string>
@@ -14,4 +14,7 @@
     <string name="apresentar_snackbar">Apresentar SnackBar</string>
     <string name="snack_com_action">Snack com Action</string>
     <string name="ok">Okay</string>
+    <string name="btn_criar_notificacaoo">Criar Notificação</string>
+    <string name="btn_cancelar_notificacaoo">Cancelar Notificação</string>
+    <string name="btn_atualizar_notificacao">Atualizar Notificação</string>
 </resources>

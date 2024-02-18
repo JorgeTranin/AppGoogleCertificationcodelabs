@@ -32,6 +32,7 @@ class MainFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding.btnToast.setOnClickListener { navTo(R.id.action_navigation_home_to_toastSnackFragment) }
+        binding.btnNotifications.setOnClickListener { navTo(R.id.action_navigation_home_to_notificationFragment) }
     }
 
     override fun onDestroyView() {
