@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import com.google.android.material.snackbar.Snackbar
 import com.jorge.app_google_certification_codelabs.R
 import com.jorge.app_google_certification_codelabs.codelabs.util.showSnack
 import com.jorge.app_google_certification_codelabs.codelabs.util.toast
@@ -28,7 +29,12 @@ class ToastSnackFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding.btnToast.setOnClickListener { toast("Apresentação de Toast") }
-        binding.btnSnackBar.setOnClickListener { showSnack(binding.textView2,"Apresentação de Snack", Color.CYAN) }
+        binding.btnSnackBar.setOnClickListener { showSnack(binding.textView2,"Apresentação de Snack", Color.MAGENTA) }
+        binding.btnSnackBarAction.setOnClickListener {
+            Snackbar.make(binding.textView2, "SnackBar", Snackbar.LENGTH_LONG).setAction(R.string.ok){
+                toast("Toast Snack Action")
+            }.show()
+        }
 
     }
 

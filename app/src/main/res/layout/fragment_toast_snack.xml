@@ -11,11 +11,13 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:text="Apresentação de Toast e Snack"
+        android:layout_marginTop="72dp"
+        android:text="@string/apresentacao_de_toast_e_snack"
+        android:textColor="@color/orange_700"
         android:textSize="23sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -23,10 +25,10 @@
         android:id="@+id/btn_toast"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="164dp"
-        android:text="Apresentar Toast"
+        android:layout_marginTop="148dp"
+        android:backgroundTint="@color/orange_700"
+        android:text="@string/apresentar_toast"
         app:layout_constraintEnd_toEndOf="@+id/textView2"
-        app:layout_constraintHorizontal_bias="0.489"
         app:layout_constraintStart_toStartOf="@+id/textView2"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
@@ -35,10 +37,22 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="92dp"
-        android:text="Apresentar SnackBar"
+        android:backgroundTint="@color/orange_700"
+        android:text="@string/apresentar_snackbar"
         app:layout_constraintEnd_toEndOf="@+id/btn_toast"
         app:layout_constraintStart_toStartOf="@+id/btn_toast"
         app:layout_constraintTop_toBottomOf="@+id/btn_toast" />
+
+    <Button
+        android:id="@+id/btn_snackBar_Action"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:backgroundTint="@color/orange_700"
+        android:text="@string/snack_com_action"
+        app:layout_constraintEnd_toEndOf="@+id/btn_toast"
+        app:layout_constraintStart_toStartOf="@+id/btn_toast"
+        app:layout_constraintTop_toBottomOf="@+id/btn_snackBar" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
