@@ -1,5 +1,6 @@
 package com.jorge.app_google_certification_codelabs.codelabs.mainfragment
 
+import android.graphics.Color
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -7,6 +8,8 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.jorge.app_google_certification_codelabs.R
 import com.jorge.app_google_certification_codelabs.codelabs.util.navTo
+import com.jorge.app_google_certification_codelabs.codelabs.util.showSnack
+import com.jorge.app_google_certification_codelabs.codelabs.util.toast
 import com.jorge.app_google_certification_codelabs.databinding.FragmentMainBinding
 
 class MainFragment : Fragment() {
@@ -28,7 +31,7 @@ class MainFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        binding.button.setOnClickListener { navTo(R.id.action_navigation_home_to_navigation_dashboard) }
+        binding.btnToast.setOnClickListener { navTo(R.id.action_navigation_home_to_toastSnackFragment) }
     }
 
     override fun onDestroyView() {

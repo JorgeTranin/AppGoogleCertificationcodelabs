@@ -50,18 +50,32 @@
         app:layout_constraintTop_toBottomOf="@+id/iv_icon_google" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btn_toast"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="28dp"
         android:layout_marginEnd="16dp"
-        android:backgroundTint="@color/orange_700"
-        android:text="Primeiro Codelab"
+        android:backgroundTint="@color/light_green_500"
+        android:text="@string/toast_Snack"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
+    <Button
+        android:id="@+id/btn_snackBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="@color/light_green_500"
+        android:text="@string/apresentaco_de_snackbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_toast" />
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

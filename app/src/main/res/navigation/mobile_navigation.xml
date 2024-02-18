@@ -11,8 +11,8 @@
         android:label="@string/title_Codelabs"
         tools:layout="@layout/fragment_main" >
         <action
-            android:id="@+id/action_navigation_home_to_navigation_dashboard"
-            app:destination="@id/navigation_dashboard" />
+            android:id="@+id/action_navigation_home_to_toastSnackFragment"
+            app:destination="@id/toastSnackFragment" />
     </fragment>
 
     <fragment
@@ -26,4 +26,9 @@
         android:name="com.jorge.app_google_certification_codelabs.codelabs.notifications.NotificationsFragment"
         android:label="@string/title_notifications"
         tools:layout="@layout/fragment_notifications" />
+    <fragment
+        android:id="@+id/toastSnackFragment"
+        android:name="com.jorge.app_google_certification_codelabs.codelabs.core.toastandsnack.ToastSnackFragment"
+        android:label="fragment_toast_snack"
+        tools:layout="@layout/fragment_toast_snack" />
 </navigation>
